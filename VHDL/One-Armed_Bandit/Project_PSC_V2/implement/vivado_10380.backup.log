@@ -1,0 +1,364 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb 10 17:19:37 2022
+# Process ID: 10380
+# Current directory: C:/Users/Dominik/Desktop/Project_PSC_V2/implement
+# Command line: vivado.exe -mode batch -log vivado.log -journal transcript.log -source C:/Users/Dominik/Desktop/Project_PSC_V2/implement/run_vivado.tcl
+# Log file: C:/Users/Dominik/Desktop/Project_PSC_V2/implement/vivado.log
+# Journal file: C:/Users/Dominik/Desktop/Project_PSC_V2/implement\transcript.log
+#-----------------------------------------------------------
+source C:/Users/Dominik/Desktop/Project_PSC_V2/implement/run_vivado.tcl
+# create_project -force Top {C:\Users\Dominik\Desktop\Project_PSC_V2\implement} -part 7a100tcsg324-1
+# set_property design_mode GateLvl [current_fileset]
+INFO: [Vivado 12-3498] Setting project source management mode (property SOURCE_MGMT_MODE) to "None".
+# set_property top Top [current_fileset]
+# set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+# add_files -norecurse {C:\Users\Dominik\Desktop\Project_PSC_V2\synthesis\Top.edn}
+# read_xdc {C:\Users\Dominik\Desktop\Project_PSC_V2\src\Nexys4-DDR_Master.xdc}
+# link_design
+Command: link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Parsing EDIF File [C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis/Top.edn]
+Finished Parsing EDIF File [C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis/Top.edn]
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Nexys4-DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Nexys4-DDR_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 651.422 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 651.422 ; gain = 360.652
+# opt_design -verbose -directive Default
+Command: opt_design -verbose -directive Default
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: Default
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.598 . Memory (MB): peak = 673.414 ; gain = 21.992
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1f27f0cce
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1225.516 ; gain = 552.102
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-442] LUT Reduction optimized 0 LUTs
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1f7ead625
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1365.641 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 4 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-442] LUT Reduction optimized 0 LUTs
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1f7ead625
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1365.641 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+INFO: [Opt 31-131] Removed net: U1/DIVIDER_reg[0]_i_1_n_1
+INFO: [Opt 31-131] Removed net: U1/DIVIDER_reg[0]_i_1_n_2
+INFO: [Opt 31-131] Removed net: U1/DIVIDER_reg[0]_i_1_n_3
+INFO: [Opt 31-131] Removed net: U1/DIVIDER_reg[12]_i_1_n_1
+INFO: [Opt 31-131] Removed net: U1/DIVIDER_reg[12]_i_1_n_2
+INFO: [Opt 31-131] Removed net: U1/DIVIDER_reg[12]_i_1_n_3
+INFO: [Opt 31-131] Removed net: U1/DIVIDER_reg[16]_i_1_n_1
+INFO: [Opt 31-131] Removed net: U1/DIVIDER_reg[16]_i_1_n_2
+INFO: [Opt 31-131] Removed net: U1/DIVIDER_reg[16]_i_1_n_3
+INFO: [Opt 31-131] Removed net: U1/DIVIDER_reg[20]_i_1_n_2
+INFO: [Opt 31-131] Removed net: U1/DIVIDER_reg[20]_i_1_n_3
+INFO: [Opt 31-131] Removed net: U1/DIVIDER_reg[4]_i_1_n_1
+INFO: [Opt 31-131] Removed net: U1/DIVIDER_reg[4]_i_1_n_2
+INFO: [Opt 31-131] Removed net: U1/DIVIDER_reg[4]_i_1_n_3
+INFO: [Opt 31-131] Removed net: U1/DIVIDER_reg[8]_i_1_n_1
+INFO: [Opt 31-131] Removed net: U1/DIVIDER_reg[8]_i_1_n_2
+INFO: [Opt 31-131] Removed net: U1/DIVIDER_reg[8]_i_1_n_3
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[12]__0_i_2_n_1
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[12]__0_i_2_n_2
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[12]__0_i_2_n_3
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[16]__0_i_2_n_1
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[16]__0_i_2_n_2
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[16]__0_i_2_n_3
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[20]__0_i_2_n_1
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[20]__0_i_2_n_2
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[20]__0_i_2_n_3
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[24]__0_i_2_n_1
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[24]__0_i_2_n_2
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[24]__0_i_2_n_3
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[28]__0_i_2_n_1
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[28]__0_i_2_n_2
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[28]__0_i_2_n_3
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[4]__0_i_2_n_1
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[4]__0_i_2_n_2
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[4]__0_i_2_n_3
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[8]__0_i_2_n_1
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[8]__0_i_2_n_2
+INFO: [Opt 31-131] Removed net: U15/Qint_reg[8]__0_i_2_n_3
+INFO: [Opt 31-131] Removed net: U15/ltOp_carry__0_n_1
+INFO: [Opt 31-131] Removed net: U15/ltOp_carry__0_n_2
+INFO: [Opt 31-131] Removed net: U15/ltOp_carry__0_n_3
+INFO: [Opt 31-131] Removed net: U15/ltOp_carry__1_n_1
+INFO: [Opt 31-131] Removed net: U15/ltOp_carry__1_n_2
+INFO: [Opt 31-131] Removed net: U15/ltOp_carry__1_n_3
+INFO: [Opt 31-131] Removed net: U15/ltOp_carry__2_n_2
+INFO: [Opt 31-131] Removed net: U15/ltOp_carry__2_n_3
+INFO: [Opt 31-131] Removed net: U15/ltOp_carry_n_1
+INFO: [Opt 31-131] Removed net: U15/ltOp_carry_n_2
+INFO: [Opt 31-131] Removed net: U15/ltOp_carry_n_3
+INFO: [Opt 31-131] Removed net: U17/gtOp__14_carry__0_n_1
+INFO: [Opt 31-131] Removed net: U17/gtOp__14_carry__0_n_2
+INFO: [Opt 31-131] Removed net: U17/gtOp__14_carry__0_n_3
+INFO: [Opt 31-131] Removed net: U17/gtOp__14_carry__1_n_1
+INFO: [Opt 31-131] Removed net: U17/gtOp__14_carry__1_n_2
+INFO: [Opt 31-131] Removed net: U17/gtOp__14_carry__1_n_3
+INFO: [Opt 31-131] Removed net: U17/gtOp__14_carry__2_n_2
+INFO: [Opt 31-131] Removed net: U17/gtOp__14_carry__2_n_3
+INFO: [Opt 31-131] Removed net: U17/gtOp__14_carry_n_1
+INFO: [Opt 31-131] Removed net: U17/gtOp__14_carry_n_2
+INFO: [Opt 31-131] Removed net: U17/gtOp__14_carry_n_3
+INFO: [Opt 31-131] Removed net: U17/gtOp__29_carry__0_n_1
+INFO: [Opt 31-131] Removed net: U17/gtOp__29_carry__0_n_2
+INFO: [Opt 31-131] Removed net: U17/gtOp__29_carry__0_n_3
+INFO: [Opt 31-131] Removed net: U17/gtOp__29_carry__1_n_1
+INFO: [Opt 31-131] Removed net: U17/gtOp__29_carry__1_n_2
+INFO: [Opt 31-131] Removed net: U17/gtOp__29_carry__1_n_3
+INFO: [Opt 31-131] Removed net: U17/gtOp__29_carry__2_n_2
+INFO: [Opt 31-131] Removed net: U17/gtOp__29_carry__2_n_3
+INFO: [Opt 31-131] Removed net: U17/gtOp__29_carry_n_1
+INFO: [Opt 31-131] Removed net: U17/gtOp__29_carry_n_2
+INFO: [Opt 31-131] Removed net: U17/gtOp__29_carry_n_3
+INFO: [Opt 31-131] Removed net: U17/gtOp_carry__0_n_1
+INFO: [Opt 31-131] Removed net: U17/gtOp_carry__0_n_2
+INFO: [Opt 31-131] Removed net: U17/gtOp_carry__0_n_3
+INFO: [Opt 31-131] Removed net: U17/gtOp_carry__1_n_1
+INFO: [Opt 31-131] Removed net: U17/gtOp_carry__1_n_2
+INFO: [Opt 31-131] Removed net: U17/gtOp_carry__1_n_3
+INFO: [Opt 31-131] Removed net: U17/gtOp_carry__2_n_2
+INFO: [Opt 31-131] Removed net: U17/gtOp_carry__2_n_3
+INFO: [Opt 31-131] Removed net: U17/gtOp_carry_n_1
+INFO: [Opt 31-131] Removed net: U17/gtOp_carry_n_2
+INFO: [Opt 31-131] Removed net: U17/gtOp_carry_n_3
+INFO: [Opt 31-131] Removed net: U2/DIVIDER_reg[0]_i_1__1_n_1
+INFO: [Opt 31-131] Removed net: U2/DIVIDER_reg[0]_i_1__1_n_2
+INFO: [Opt 31-131] Removed net: U2/DIVIDER_reg[0]_i_1__1_n_3
+INFO: [Opt 31-131] Removed net: U2/DIVIDER_reg[12]_i_1__1_n_1
+INFO: [Opt 31-131] Removed net: U2/DIVIDER_reg[12]_i_1__1_n_2
+INFO: [Opt 31-131] Removed net: U2/DIVIDER_reg[12]_i_1__1_n_3
+INFO: [Opt 31-131] Removed net: U2/DIVIDER_reg[16]_i_1__1_n_1
+INFO: [Opt 31-131] Removed net: U2/DIVIDER_reg[16]_i_1__1_n_2
+INFO: [Opt 31-131] Removed net: U2/DIVIDER_reg[16]_i_1__1_n_3
+INFO: [Opt 31-131] Removed net: U2/DIVIDER_reg[20]_i_1__0_n_2
+INFO: [Opt 31-131] Removed net: U2/DIVIDER_reg[20]_i_1__0_n_3
+INFO: [Opt 31-131] Removed net: U2/DIVIDER_reg[4]_i_1__1_n_1
+INFO: [Opt 31-131] Removed net: U2/DIVIDER_reg[4]_i_1__1_n_2
+INFO: [Opt 31-131] Removed net: U2/DIVIDER_reg[4]_i_1__1_n_3
+INFO: [Opt 31-131] Removed net: U2/DIVIDER_reg[8]_i_1__1_n_1
+INFO: [Opt 31-131] Removed net: U2/DIVIDER_reg[8]_i_1__1_n_2
+INFO: [Opt 31-131] Removed net: U2/DIVIDER_reg[8]_i_1__1_n_3
+INFO: [Opt 31-131] Removed net: U3/DIVIDER_reg[0]_i_1__2_n_1
+INFO: [Opt 31-131] Removed net: U3/DIVIDER_reg[0]_i_1__2_n_2
+INFO: [Opt 31-131] Removed net: U3/DIVIDER_reg[0]_i_1__2_n_3
+INFO: [Opt 31-131] Removed net: U3/DIVIDER_reg[12]_i_1__2_n_1
+INFO: [Opt 31-131] Removed net: U3/DIVIDER_reg[12]_i_1__2_n_2
+INFO: [Opt 31-131] Removed net: U3/DIVIDER_reg[12]_i_1__2_n_3
+INFO: [Opt 31-131] Removed net: U3/DIVIDER_reg[16]_i_1__2_n_1
+INFO: [Opt 31-131] Removed net: U3/DIVIDER_reg[16]_i_1__2_n_2
+INFO: [Opt 31-131] Removed net: U3/DIVIDER_reg[16]_i_1__2_n_3
+INFO: [Opt 31-131] Removed net: U3/DIVIDER_reg[20]_i_1__1_n_2
+INFO: [Opt 31-131] Removed net: U3/DIVIDER_reg[20]_i_1__1_n_3
+INFO: [Opt 31-131] Removed net: U3/DIVIDER_reg[4]_i_1__2_n_1
+INFO: [Opt 31-131] Removed net: U3/DIVIDER_reg[4]_i_1__2_n_2
+INFO: [Opt 31-131] Removed net: U3/DIVIDER_reg[4]_i_1__2_n_3
+INFO: [Opt 31-131] Removed net: U3/DIVIDER_reg[8]_i_1__2_n_1
+INFO: [Opt 31-131] Removed net: U3/DIVIDER_reg[8]_i_1__2_n_2
+INFO: [Opt 31-131] Removed net: U3/DIVIDER_reg[8]_i_1__2_n_3
+INFO: [Opt 31-131] Removed net: U5/DIVIDER_reg[0]_i_1__0_n_1
+INFO: [Opt 31-131] Removed net: U5/DIVIDER_reg[0]_i_1__0_n_2
+INFO: [Opt 31-131] Removed net: U5/DIVIDER_reg[0]_i_1__0_n_3
+INFO: [Opt 31-131] Removed net: U5/DIVIDER_reg[12]_i_1__0_n_1
+INFO: [Opt 31-131] Removed net: U5/DIVIDER_reg[12]_i_1__0_n_2
+INFO: [Opt 31-131] Removed net: U5/DIVIDER_reg[12]_i_1__0_n_3
+INFO: [Opt 31-131] Removed net: U5/DIVIDER_reg[16]_i_1__0_n_3
+INFO: [Opt 31-131] Removed net: U5/DIVIDER_reg[4]_i_1__0_n_1
+INFO: [Opt 31-131] Removed net: U5/DIVIDER_reg[4]_i_1__0_n_2
+INFO: [Opt 31-131] Removed net: U5/DIVIDER_reg[4]_i_1__0_n_3
+INFO: [Opt 31-131] Removed net: U5/DIVIDER_reg[8]_i_1__0_n_1
+INFO: [Opt 31-131] Removed net: U5/DIVIDER_reg[8]_i_1__0_n_2
+INFO: [Opt 31-131] Removed net: U5/DIVIDER_reg[8]_i_1__0_n_3
+Phase 3 Sweep | Checksum: 28b4f5ee7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1365.641 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 28b4f5ee7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1365.641 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 28b4f5ee7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1365.641 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 28b4f5ee7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1365.641 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               4  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1365.641 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 210e31cc4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 1365.641 ; gain = 0.000
+
+Starting Power Optimization Task
+Begin power optimizations | Checksum: 210e31cc4
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-50] Optimizing power for module Top ...
+INFO: [Pwropt 34-167] No BRAM present in this design. Skipping BRAM power optimization.
+End power optimizations | Checksum: 210e31cc4
+Power optimization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1365.641 ; gain = 0.000
+INFO: [Pwropt 34-198] Malloced memory gain at end of power optimization: 0 bytes
+Ending Power Optimization Task | Checksum: 210e31cc4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1365.641 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 210e31cc4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1365.641 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1365.641 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 210e31cc4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1365.641 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+152 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1365.641 ; gain = 714.219
+# write_checkpoint -force {Top_opt.dcp}
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1365.641 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1365.641 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Dominik/Desktop/Project_PSC_V2/implement/Top_opt.dcp' has been generated.
+# catch { report_drc -file {Top_opted.rpt} }
+Command: report_drc -file Top_opted.rpt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Dominik/Desktop/Project_PSC_V2/implement/Top_opted.rpt.
+report_drc completed successfully
+# place_design -verbose -directive Default
+Command: place_design -verbose -directive Default
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Default' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1365.641 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 11d6e9e9f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1365.641 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1365.641 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Place 30-568] A LUT 'U2/Qint[2]_i_2__0' is driving clock pin of 3 registers. This could lead to large hold time violations. First few involved registers are:
+	U8/Qint_reg[1] {FDCE}
+	U8/Qint_reg[0] {FDCE}
+	U8/Qint_reg[2] {FDCE}
+WARNING: [Place 30-568] A LUT 'U3/Qint[2]_i_2__1' is driving clock pin of 3 registers. This could lead to large hold time violations. First few involved registers are:
+	U9/Qint_reg[2] {FDCE}
+	U9/Qint_reg[1] {FDCE}
+	U9/Qint_reg[0] {FDCE}
+WARNING: [Place 30-568] A LUT 'U5/Qint[1]_i_2' is driving clock pin of 2 registers. This could lead to large hold time violations. First few involved registers are:
+	U6/Qint_reg[1] {FDCE}
+	U6/Qint_reg[0] {FDCE}
+WARNING: [Place 30-568] A LUT 'U1/Qint[2]_i_2' is driving clock pin of 3 registers. This could lead to large hold time violations. First few involved registers are:
+	U7/Qint_reg[1] {FDCE}
+	U7/Qint_reg[0] {FDCE}
+	U7/Qint_reg[2] {FDCE}
+ERROR: [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.
+	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets CE_IBUF] >
+
+	CE_IBUF_inst (IBUF.O) is locked to IOB_X0Y82
+	CE_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1f53e50af
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.769 . Memory (MB): peak = 1365.641 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1f53e50af
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.770 . Memory (MB): peak = 1365.641 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 1f53e50af
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.772 . Memory (MB): peak = 1365.641 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+11 Infos, 4 Warnings, 0 Critical Warnings and 3 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 10 17:20:02 2022...

@@ -1,0 +1,14 @@
+[Version]
+Version=11.1
+[Designs]
+Project_PSC_V2=Project_PSC_V2.adf
+[Settings]
+Active=Project_PSC_V2
+[Expand]
+project_psc_v2=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

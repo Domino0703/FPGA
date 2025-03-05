@@ -1,0 +1,13 @@
+i<>.\src\Counter.vhd
+i<>.\src\Decoder.vhd
+i<>.\src\Prescaler_11.vhd
+i<>.\src\Prescaler_13.vhd
+i<>.\src\Prescaler_17.vhd
+i<>.\src\Top.bde
+i<>.\src\Counter_2.vhd
+i<>.\src\Display.vhd
+i<>.\src\Annode.vhd
+i<>.\src\Prescaler_DISP.vhd
+i<>.\src\Decoder_1.vhd
+i<>.\src\Compare.vhd
+i<>.\src\Counter_3.vhd

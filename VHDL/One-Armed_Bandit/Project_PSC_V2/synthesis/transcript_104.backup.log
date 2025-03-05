@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb 10 18:09:51 2022
+# Process ID: 104
+# Current directory: C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis
+# Command line: vivado.exe -mode batch -log vivado.log -journal transcript.log -source C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis/run_vivado.tcl
+# Log file: C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis/vivado.log
+# Journal file: C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis\transcript.log
+#-----------------------------------------------------------
+source C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis/run_vivado.tcl

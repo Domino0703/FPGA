@@ -1,0 +1,19 @@
+54
+~E 1 "../src/CLK_SLOW.vhd" 29 CLK_SLOW
+~A 1 "../src/CLK_SLOW.vhd" 39 CLK_SLOW
+~E 1 "../src/Counter.vhd" 29 Counter
+~A 1 "../src/Counter.vhd" 40 Counter
+~E 1 "../src/Decoder.vhd" 28 Decoder
+~A 1 "../src/Decoder.vhd" 37 Decoder
+~E 0 "" 0 Fub3
+~E 1 "../src/Prescaler_11.vhd" 29 Prescaler_11
+~A 1 "../src/Prescaler_11.vhd" 40 Prescaler_11
+~E 1 "../src/Prescaler_13.vhd" 29 Prescaler_13
+~A 1 "../src/Prescaler_13.vhd" 40 Prescaler_13
+~E 1 "../src/Prescaler_17.vhd" 29 Prescaler_17
+~A 1 "../src/Prescaler_17.vhd" 40 Prescaler_17
+~C 1 "../src/TestBench/tutorvhdl_TB.vhd" 181 testbench_for_tutorvhdl
+~E 1 "../compile/Top.vhd" 27 Top
+~A 1~E 1 "../src/TutorVHDL.vhd" 20 TutorVHDL
+~E 1 "../src/TestBench/tutorvhdl_TB.vhd" 7 tutorvhdl_tb
+~A 1 "../src/TestBench/tutorvhdl_TB.vhd" 10 TB_ARCHITECTURE

@@ -1,0 +1,1 @@
+-w -erf C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Project_PSC_V2.erf -d C:/Users/Dominik/Desktop/Project_PSC_V2/compile -s C:/Users/Dominik/Desktop/Project_PSC_V2/library.cfg -j C:/Users/Dominik/Desktop/Project_PSC_V2/projlib.cfg -work TutorVHDL -dbg -e 100 -work TutorVHDL_post_synthesis -2002 C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis/Top.vhd 

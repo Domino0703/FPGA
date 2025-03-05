@@ -1,0 +1,17 @@
+.\src\Counter.vhd
+.\src\Decoder.vhd
+.\src\Prescaler_11.vhd
+.\src\Prescaler_13.vhd
+.\src\Prescaler_17.vhd
+.\src\Top.bde
+.\src\Counter_2.vhd
+.\src\Display.vhd
+.\src\Annode.vhd
+.\src\Prescaler_DISP.vhd
+.\src\Decoder_1.vhd
+.\src\Compare.vhd
+.\src\Counter_3.vhd
+.\src\TestBench\top_TB.vhd
+.\synthesis\Top.vhd
+.\implement\Top.v
+.\implement\glbl.v

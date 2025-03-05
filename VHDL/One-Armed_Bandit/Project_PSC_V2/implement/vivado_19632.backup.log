@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb 10 17:14:10 2022
+# Process ID: 19632
+# Current directory: C:/Users/Dominik/Desktop/Project_PSC_V2/implement
+# Command line: vivado.exe -mode batch -log vivado.log -journal transcript.log -source C:/Users/Dominik/Desktop/Project_PSC_V2/implement/run_vivado.tcl
+# Log file: C:/Users/Dominik/Desktop/Project_PSC_V2/implement/vivado.log
+# Journal file: C:/Users/Dominik/Desktop/Project_PSC_V2/implement\transcript.log
+#-----------------------------------------------------------
+source C:/Users/Dominik/Desktop/Project_PSC_V2/implement/run_vivado.tcl
+# create_project -force Top {C:\Users\Dominik\Desktop\Project_PSC_V2\implement} -part 7a100tcsg324-1
+# set_property design_mode GateLvl [current_fileset]
+INFO: [Vivado 12-3498] Setting project source management mode (property SOURCE_MGMT_MODE) to "None".
+# set_property top Top [current_fileset]
+# set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+# add_files -norecurse {C:\Users\Dominik\Desktop\Project_PSC_V2\synthesis\Top.edn}
+# read_xdc {C:\Users\Dominik\Desktop\Project_PSC_V2\src\Nexys4-DDR_Master.xdc}
+# link_design
+Command: link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Parsing EDIF File [C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis/Top.edn]
+Finished Parsing EDIF File [C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis/Top.edn]
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Nexys4-DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Nexys4-DDR_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 650.996 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 650.996 ; gain = 359.312
+# opt_design -verbose -directive Default
+Command: opt_design -verbose -directive Default
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: Default
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net CLK_IBUF has multiple drivers: CLK_IBUF_inst/O, and U17/Q1_reg/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net CLR_IBUF has multiple drivers: CLR_IBUF_inst/O, and U17/Q3_reg/Q.
+INFO: [Project 1-461] DRC finished with 2 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.607 . Memory (MB): peak = 672.965 ; gain = 21.969
+INFO: [Common 17-83] Releasing license: Implementation
+6 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+    while executing
+"opt_design -verbose -directive Default"
+    (file "C:/Users/Dominik/Desktop/Project_PSC_V2/implement/run_vivado.tcl" line 9)
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 10 17:14:21 2022...

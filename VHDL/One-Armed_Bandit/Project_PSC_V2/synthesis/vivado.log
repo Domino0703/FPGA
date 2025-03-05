@@ -1,0 +1,386 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb 10 18:42:27 2022
+# Process ID: 2420
+# Current directory: C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis
+# Command line: vivado.exe -mode batch -log vivado.log -journal transcript.log -source C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis/run_vivado.tcl
+# Log file: C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis/vivado.log
+# Journal file: C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis\transcript.log
+#-----------------------------------------------------------
+source C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis/run_vivado.tcl
+# create_project -force Top {C:\Users\Dominik\Desktop\Project_PSC_V2\synthesis} -part 7a100tcsg324-1
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Counter.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Decoder.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_11.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_13.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_17.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Counter_2.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Display.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Annode.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_DISP.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Decoder_1.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Compare.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Counter_3.vhd}
+# set_property top Top [current_fileset]
+# set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+# synth_design -top Top -flatten_hierarchy rebuilt -gated_clock_conversion off -fsm_extraction auto -bufg 12 -fanout_limit 10000 -shreg_min_size 3 -max_bram -1 -max_uram -1 -max_dsp -1 -max_bram_cascade_height -1 -max_uram_cascade_height -1 -cascade_dsp auto -directive default -resource_sharing auto -control_set_opt_threshold auto
+Command: synth_design -top Top -flatten_hierarchy rebuilt -gated_clock_conversion off -fsm_extraction auto -bufg 12 -fanout_limit 10000 -shreg_min_size 3 -max_bram -1 -max_uram -1 -max_dsp -1 -max_bram_cascade_height -1 -max_uram_cascade_height -1 -cascade_dsp auto -directive default -resource_sharing auto -control_set_opt_threshold auto
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12168 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 691.766 ; gain = 179.156
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:43]
+INFO: [Synth 8-3491] module 'Prescaler_11' declared at 'C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_11.vhd:29' bound to instance 'U1' of component 'Prescaler_11' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'Prescaler_11' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_11.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Prescaler_11' (1#1) [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_11.vhd:40]
+INFO: [Synth 8-3491] module 'Display' declared at 'C:/Users/Dominik/Desktop/Project_PSC_V2/src/Display.vhd:4' bound to instance 'U10' of component 'Display' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'Display' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Display.vhd:16]
+WARNING: [Synth 8-614] signal 'IN_1' is read in the process but is not in the sensitivity list [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Display.vhd:19]
+WARNING: [Synth 8-614] signal 'IN_2' is read in the process but is not in the sensitivity list [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Display.vhd:19]
+WARNING: [Synth 8-614] signal 'IN_3' is read in the process but is not in the sensitivity list [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Display.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'Display' (2#1) [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Display.vhd:16]
+INFO: [Synth 8-3491] module 'Annode' declared at 'C:/Users/Dominik/Desktop/Project_PSC_V2/src/Annode.vhd:4' bound to instance 'U11' of component 'Annode' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'Annode' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Annode.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Annode' (3#1) [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Annode.vhd:13]
+INFO: [Synth 8-3491] module 'Decoder_1' declared at 'C:/Users/Dominik/Desktop/Project_PSC_V2/src/Decoder_1.vhd:28' bound to instance 'U12' of component 'Decoder_1' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'Decoder_1' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Decoder_1.vhd:38]
+WARNING: [Synth 8-614] signal 'SGN' is read in the process but is not in the sensitivity list [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Decoder_1.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_1' (4#1) [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Decoder_1.vhd:38]
+INFO: [Synth 8-3491] module 'Compare' declared at 'C:/Users/Dominik/Desktop/Project_PSC_V2/src/Compare.vhd:28' bound to instance 'U13' of component 'Compare' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'Compare' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Compare.vhd:41]
+WARNING: [Synth 8-614] signal 'IN_1' is read in the process but is not in the sensitivity list [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Compare.vhd:44]
+WARNING: [Synth 8-614] signal 'IN_2' is read in the process but is not in the sensitivity list [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Compare.vhd:44]
+WARNING: [Synth 8-614] signal 'IN_3' is read in the process but is not in the sensitivity list [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Compare.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Compare' (5#1) [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Compare.vhd:41]
+INFO: [Synth 8-3491] module 'Prescaler_13' declared at 'C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_13.vhd:29' bound to instance 'U2' of component 'Prescaler_13' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'Prescaler_13' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_13.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'Prescaler_13' (6#1) [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_13.vhd:38]
+INFO: [Synth 8-3491] module 'Prescaler_17' declared at 'C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_17.vhd:29' bound to instance 'U3' of component 'Prescaler_17' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'Prescaler_17' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_17.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Prescaler_17' (7#1) [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_17.vhd:39]
+INFO: [Synth 8-3491] module 'Prescaler_DISP' declared at 'C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_DISP.vhd:5' bound to instance 'U5' of component 'Prescaler_DISP' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:204]
+INFO: [Synth 8-638] synthesizing module 'Prescaler_DISP' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_DISP.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Prescaler_DISP' (8#1) [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_DISP.vhd:15]
+INFO: [Synth 8-3491] module 'Counter_2' declared at 'C:/Users/Dominik/Desktop/Project_PSC_V2/src/Counter_2.vhd:5' bound to instance 'U6' of component 'Counter_2' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:211]
+INFO: [Synth 8-638] synthesizing module 'Counter_2' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Counter_2.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Counter_2' (9#1) [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Counter_2.vhd:15]
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/Dominik/Desktop/Project_PSC_V2/src/Counter.vhd:29' bound to instance 'U7' of component 'Counter' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:218]
+INFO: [Synth 8-638] synthesizing module 'Counter' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Counter.vhd:43]
+WARNING: [Synth 8-614] signal 'CE' is read in the process but is not in the sensitivity list [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Counter.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Counter' (10#1) [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Counter.vhd:43]
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/Dominik/Desktop/Project_PSC_V2/src/Counter.vhd:29' bound to instance 'U8' of component 'Counter' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:229]
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/Dominik/Desktop/Project_PSC_V2/src/Counter.vhd:29' bound to instance 'U9' of component 'Counter' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:240]
+INFO: [Synth 8-256] done synthesizing module 'Top' (11#1) [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:43]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 758.141 ; gain = 245.531
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 758.141 ; gain = 245.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 758.141 ; gain = 245.531
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 868.531 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 868.566 ; gain = 0.035
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 868.566 ; gain = 355.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 868.566 ; gain = 355.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 868.566 ; gain = 355.957
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'Q_RED_reg' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Compare.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'Q_GREEN_reg' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Compare.vhd:48]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 868.566 ; gain = 355.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	  12 Input      7 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 21    
+	   2 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Display 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 1     
+Module Annode 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+Module Decoder_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	  12 Input      7 Bit        Muxes := 1     
+Module Counter_2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design Top has port AN[4] driven by constant 1
+WARNING: [Synth 8-3917] design Top has port AN[3] driven by constant 1
+WARNING: [Synth 8-3917] design Top has port AN[2] driven by constant 1
+WARNING: [Synth 8-3917] design Top has port AN[1] driven by constant 1
+WARNING: [Synth 8-3917] design Top has port AN[0] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 868.566 ; gain = 355.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 868.566 ; gain = 355.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 868.566 ; gain = 355.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 868.566 ; gain = 355.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 873.129 ; gain = 360.520
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 873.129 ; gain = 360.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 873.129 ; gain = 360.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 873.129 ; gain = 360.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 873.129 ; gain = 360.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 873.129 ; gain = 360.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    23|
+|3     |LUT2   |     6|
+|4     |LUT3   |     9|
+|5     |LUT4   |    10|
+|6     |LUT5   |   102|
+|7     |LUT6   |    21|
+|8     |FDCE   |    98|
+|9     |LDC    |     2|
+|10    |IBUF   |     7|
+|11    |OBUF   |    17|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+---------------+------+
+|      |Instance |Module         |Cells |
++------+---------+---------------+------+
+|1     |top      |               |   296|
+|2     |  U1     |Prescaler_11   |    58|
+|3     |  U13    |Compare        |     2|
+|4     |  U2     |Prescaler_13   |    58|
+|5     |  U3     |Prescaler_17   |    58|
+|6     |  U5     |Prescaler_DISP |    47|
+|7     |  U6     |Counter_2      |    17|
+|8     |  U7     |Counter        |    13|
+|9     |  U8     |Counter_0      |     9|
+|10    |  U9     |Counter_1      |     9|
++------+---------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 873.129 ; gain = 360.520
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 873.129 ; gain = 250.094
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 873.129 ; gain = 360.520
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 888.977 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LDC => LDCE: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 888.977 ; gain = 600.516
+# report_utilization -file {Top_utilization_synth.rpt}
+# write_edf -force {Top.edn}
+C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis/Top.edn
+# write_vhdl -force {Top.vhd}
+# write_xdc -force {Top.xdc}
+# write_checkpoint -force Top_synth.dcp
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 888.977 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis/Top_synth.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 10 18:42:55 2022...

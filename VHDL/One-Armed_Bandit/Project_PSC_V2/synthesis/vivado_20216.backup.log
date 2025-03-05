@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb 10 18:06:20 2022
+# Process ID: 20216
+# Current directory: C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis
+# Command line: vivado.exe -mode batch -log vivado.log -journal transcript.log -source C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis/run_vivado.tcl
+# Log file: C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis/vivado.log
+# Journal file: C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis\transcript.log
+#-----------------------------------------------------------
+source C:/Users/Dominik/Desktop/Project_PSC_V2/synthesis/run_vivado.tcl
+# create_project -force Top {C:\Users\Dominik\Desktop\Project_PSC_V2\synthesis} -part 7a100tcsg324-1
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Counter.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Decoder.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_11.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_13.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_17.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Counter_2.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Display.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Annode.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_DISP.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Decoder_1.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Compare.vhd}
+# add_files -norecurse {C:/Users/Dominik/Desktop/Project_PSC_V2/src/Counter_3.vhd}
+# set_property top Top [current_fileset]
+# set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+# synth_design -top Top -flatten_hierarchy rebuilt -gated_clock_conversion off -fsm_extraction auto -bufg 12 -fanout_limit 10000 -shreg_min_size 3 -max_bram -1 -max_uram -1 -max_dsp -1 -max_bram_cascade_height -1 -max_uram_cascade_height -1 -cascade_dsp auto -directive default -resource_sharing auto -control_set_opt_threshold auto
+Command: synth_design -top Top -flatten_hierarchy rebuilt -gated_clock_conversion off -fsm_extraction auto -bufg 12 -fanout_limit 10000 -shreg_min_size 3 -max_bram -1 -max_uram -1 -max_dsp -1 -max_bram_cascade_height -1 -max_uram_cascade_height -1 -cascade_dsp auto -directive default -resource_sharing auto -control_set_opt_threshold auto
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5088 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 692.566 ; gain = 179.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:43]
+INFO: [Synth 8-3491] module 'Prescaler_11' declared at 'C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_11.vhd:29' bound to instance 'U1' of component 'Prescaler_11' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'Prescaler_11' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_11.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Prescaler_11' (1#1) [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_11.vhd:40]
+INFO: [Synth 8-3491] module 'Display' declared at 'C:/Users/Dominik/Desktop/Project_PSC_V2/src/Display.vhd:4' bound to instance 'U10' of component 'Display' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'Display' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Display.vhd:16]
+WARNING: [Synth 8-614] signal 'IN_1' is read in the process but is not in the sensitivity list [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Display.vhd:19]
+WARNING: [Synth 8-614] signal 'IN_2' is read in the process but is not in the sensitivity list [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Display.vhd:19]
+WARNING: [Synth 8-614] signal 'IN_3' is read in the process but is not in the sensitivity list [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Display.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'Display' (2#1) [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Display.vhd:16]
+INFO: [Synth 8-3491] module 'Annode' declared at 'C:/Users/Dominik/Desktop/Project_PSC_V2/src/Annode.vhd:4' bound to instance 'U11' of component 'Annode' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'Annode' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Annode.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Annode' (3#1) [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Annode.vhd:13]
+INFO: [Synth 8-3491] module 'Decoder_1' declared at 'C:/Users/Dominik/Desktop/Project_PSC_V2/src/Decoder_1.vhd:28' bound to instance 'U12' of component 'Decoder_1' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'Decoder_1' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Decoder_1.vhd:38]
+WARNING: [Synth 8-614] signal 'SGN' is read in the process but is not in the sensitivity list [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Decoder_1.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_1' (4#1) [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Decoder_1.vhd:38]
+INFO: [Synth 8-3491] module 'Compare' declared at 'C:/Users/Dominik/Desktop/Project_PSC_V2/src/Compare.vhd:28' bound to instance 'U13' of component 'Compare' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'Compare' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Compare.vhd:41]
+WARNING: [Synth 8-614] signal 'IN_1' is read in the process but is not in the sensitivity list [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Compare.vhd:44]
+WARNING: [Synth 8-614] signal 'IN_2' is read in the process but is not in the sensitivity list [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Compare.vhd:44]
+WARNING: [Synth 8-614] signal 'IN_3' is read in the process but is not in the sensitivity list [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Compare.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Compare' (5#1) [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Compare.vhd:41]
+INFO: [Synth 8-3491] module 'Prescaler_13' declared at 'C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_13.vhd:29' bound to instance 'U2' of component 'Prescaler_13' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:201]
+INFO: [Synth 8-638] synthesizing module 'Prescaler_13' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_13.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'Prescaler_13' (6#1) [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_13.vhd:38]
+INFO: [Synth 8-3491] module 'Prescaler_17' declared at 'C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_17.vhd:29' bound to instance 'U3' of component 'Prescaler_17' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:209]
+INFO: [Synth 8-638] synthesizing module 'Prescaler_17' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_17.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Prescaler_17' (7#1) [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Prescaler_17.vhd:39]
+INFO: [Synth 8-3491] module 'Counter_3' declared at 'C:/Users/Dominik/Desktop/Project_PSC_V2/src/Counter_3.vhd:29' bound to instance 'U4' of component 'Counter_3' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'Counter_3' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Counter_3.vhd:42]
+ERROR: [Synth 8-27] else clause after check for clock not supported [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Counter_3.vhd:62]
+WARNING: [Synth 8-614] signal 'CE' is read in the process but is not in the sensitivity list [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Counter_3.vhd:45]
+ERROR: [Synth 8-285] failed synthesizing module 'Counter_3' [C:/Users/Dominik/Desktop/Project_PSC_V2/src/Counter_3.vhd:42]
+ERROR: [Synth 8-285] failed synthesizing module 'Top' [C:/Users/Dominik/Desktop/Project_PSC_V2/compile/Top.vhd:43]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 758.395 ; gain = 245.074
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 8 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 10 18:06:32 2022...

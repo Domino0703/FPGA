@@ -1,0 +1,109 @@
+timestamp=1644514892436
+
+[~A]
+C:/Users/Dominik/Desktop/Project_PSC_V2/implement/Top.v_glbl.v=0*44991*58583
+LastVerilogToplevel=glbl
+ModifyID=80
+Version=74
+
+[~MFT]
+0=16|0TutorVHDL_timing.mgf|58583|28302
+1=24|1TutorVHDL_timing.mgf|391079|263400
+3=48|3TutorVHDL_timing.mgf|24054|16310
+
+[$root]
+A/$root=22|||1*263400
+BinI32/$root=3*16310
+SLP=3*16414
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c9216d7b574f128481a67e6d4e6b8675e2e22
+
+[Compare]
+A/Compare=22|../implement/Top.v|15|1*263774
+BinI32/Compare=3*16482
+R=../implement/Top.v|15
+SLP=3*16588
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|87f2930aabb469b9164f76b4ac83733026527262ddaa47cb266f3a3c4d9b973adfef6c3fca2036bbec831f1e7b55f048
+
+[Counter]
+A/Counter=22|../implement/Top.v|59|1*265451
+BinI32/Counter=3*16760
+R=../implement/Top.v|59
+SLP=3*16866
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|06226efa8082c213e6fdeb1e63816e2526527262ddaa47cb266f3a3c4d9b973a4e5fb87b6baceda5f04e1936b54688d1
+
+[Counter_0]
+A/Counter_0=22|../implement/Top.v|223|1*271199
+BinI32/Counter_0=3*17386
+R=../implement/Top.v|223
+SLP=3*17494
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|a92364e0385a15b8865f11b934d7de143de123015416cd0c5a10ee69a74bbdb0b5a14fe0ed867713e256dc19d32161d0
+
+[Counter_1]
+A/Counter_1=22|../implement/Top.v|333|1*275363
+BinI32/Counter_1=3*17812
+R=../implement/Top.v|333
+SLP=3*17920
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|d6af78efe82b1ef531a3fe06747c3db4a30025de53f2eeed202138bbfcd65f14c900e7dfe66810afa451ebc43427b44e
+
+[Counter_2]
+A/Counter_2=22|../implement/Top.v|442|1*279503
+BinI32/Counter_2=3*18242
+R=../implement/Top.v|442
+SLP=3*18350
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|5d409b187561a54865f9dfd71fa8ad157dbc6c096e62a2c3a1caba0cfcca9cfbc900e7dfe66810afa451ebc43427b44e
+
+[Prescaler_11]
+A/Prescaler_11=22|../implement/Top.v|606|1*285308
+BinI32/Prescaler_11=3*19150
+R=../implement/Top.v|606
+SLP=3*19261
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|f9de90c3f290ec017f643d00cd24175d398c50aac98ad821dee0b56226762eb9fd65dde1d8e662afcc63fccc3b81b93b
+
+[Prescaler_13]
+A/Prescaler_13=22|../implement/Top.v|1183|1*309966
+BinI32/Prescaler_13=3*20032
+R=../implement/Top.v|1183
+SLP=3*20143
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|7d1056b6e0236bb9a49c6aa5289f0ce48a0f723ec907ef45a4c3588db39f1ebefd65dde1d8e662afcc63fccc3b81b93b
+
+[Prescaler_17]
+A/Prescaler_17=22|../implement/Top.v|1760|1*335511
+BinI32/Prescaler_17=3*20915
+R=../implement/Top.v|1760
+SLP=3*21026
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|02b8c663088bf005f65ad4ce2460f1404f6eb3684630852be7051e35603af2130a29dc691c34f0ef1b464d815639d929
+
+[Prescaler_DISP]
+A/Prescaler_DISP=22|../implement/Top.v|2337|1*361056
+BinI32/Prescaler_DISP=3*21794
+R=../implement/Top.v|2337
+SLP=3*21907
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|16b0090f2222d3da4063fdad304ec253da2f500aefb1d9b3b31566aa270f9b2d435e79a65ec8b46b5e2ee0fd4cfd0ace
+
+[Top]
+A/Top=22|../implement/Top.v|2803|1*382960
+BinI32/Top=3*22515
+R=../implement/Top.v|2803
+SLP=3*22617
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|f8911ddcb55ae6ffc9fa5b00358c0e08f74584564eb733c47dbb0dfb1f995dad
+
+[glbl]
+A/glbl=22|../implement/Top.v|3008|1*391079
+BinI32/glbl=3*23206
+R=../implement/Top.v|3008
+SLP=3*24054
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|e453c9fe98ea743e4315e0b5669101f192025c61bf35a34aefc41f9b9dfd7865
+
+[~U]
+$root=12|0*40727|
+Compare=12|0*40989|
+Counter=12|0*41241|
+Counter_0=12|0*41605|
+Counter_1=12|0*41909|
+Counter_2=12|0*42211|
+Prescaler_11=12|0*42558|
+Prescaler_13=12|0*42995|
+Prescaler_17=12|0*43446|
+Prescaler_DISP=12|0*43897|
+Top=12|0*44307||0x10
+glbl=12|0*44803||0x10

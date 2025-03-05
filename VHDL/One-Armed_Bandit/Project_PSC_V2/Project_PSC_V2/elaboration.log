@@ -1,0 +1,47 @@
+Active-HDL 11.1.262.7351 2022-02-13 12:42:28
+
+Elaboration top modules:
+VHDL Configuration            testbench_for_top
+
+
+----------------------------------------------------------------------------------------------------
+Entity         | Architecture    | Library   | Info | Compiler Version        | Compilation Options
+----------------------------------------------------------------------------------------------------
+top_tb         | TB_ARCHITECTURE | tutorvhdl |      | 11.1.262.7351 (Windows) | -dbg
+Top            | Top             | tutorvhdl |      | 11.1.262.7351 (Windows) | -dbg
+Prescaler_11   | Prescaler_11    | tutorvhdl |      | 11.1.262.7351 (Windows) | -dbg
+Display        | Display         | tutorvhdl |      | 11.1.262.7351 (Windows) | -dbg
+Annode         | Annode          | tutorvhdl |      | 11.1.262.7351 (Windows) | -dbg
+Decoder_1      | Decoder_1       | tutorvhdl |      | 11.1.262.7351 (Windows) | -dbg
+Compare        | Compare         | tutorvhdl |      | 11.1.262.7351 (Windows) | -dbg
+Prescaler_13   | Prescaler_13    | tutorvhdl |      | 11.1.262.7351 (Windows) | -dbg
+Prescaler_17   | Prescaler_17    | tutorvhdl |      | 11.1.262.7351 (Windows) | -dbg
+Prescaler_DISP | Prescaler_DISP  | tutorvhdl |      | 11.1.262.7351 (Windows) | -dbg
+Counter_2      | Counter_2       | tutorvhdl |      | 11.1.262.7351 (Windows) | -dbg
+Counter        | Counter         | tutorvhdl |      | 11.1.262.7351 (Windows) | -dbg
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+VHDL Configuration               | Library   | Info | Compiler Version        | Compilation Options
+----------------------------------------------------------------------------------------------------
+testbench_for_top                | tutorvhdl |      |                         | <unavailable>
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+VHDL Package                     | Library   | Info | Compiler Version        | Compilation Options
+----------------------------------------------------------------------------------------------------
+standard                         | std       |      |                         | <unavailable>
+TEXTIO                           | std       |      |                         | <unavailable>
+std_logic_1164                   | ieee      |      |                         | <unavailable>
+std_logic_arith                  | ieee      |      |                         | <unavailable>
+STD_LOGIC_UNSIGNED               | ieee      |      |                         | <unavailable>
+STD_LOGIC_SIGNED                 | ieee      |      |                         | <unavailable>
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Library                          | Comment
+----------------------------------------------------------------------------------------------------
+ieee                             | Standard IEEE packages library
+std                              | Standard VHDL library
+tutorvhdl                        | None
+----------------------------------------------------------------------------------------------------

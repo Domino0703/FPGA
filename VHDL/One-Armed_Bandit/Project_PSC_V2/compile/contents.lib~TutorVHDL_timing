@@ -1,0 +1,25 @@
+80
+~M 0 "" 0 $root
+~A 1 "" 0 $root
+~M 1 "../implement/Top.v" 15 Compare
+~A 1 "../implement/Top.v" 15 Compare
+~M 1 "../implement/Top.v" 59 Counter
+~A 1 "../implement/Top.v" 59 Counter
+~M 1 "../implement/Top.v" 223 Counter_0
+~A 1 "../implement/Top.v" 223 Counter_0
+~M 1 "../implement/Top.v" 333 Counter_1
+~A 1 "../implement/Top.v" 333 Counter_1
+~M 1 "../implement/Top.v" 442 Counter_2
+~A 1 "../implement/Top.v" 442 Counter_2
+~M 1 "../implement/Top.v" 606 Prescaler_11
+~A 1 "../implement/Top.v" 606 Prescaler_11
+~M 1 "../implement/Top.v" 1183 Prescaler_13
+~A 1 "../implement/Top.v" 1183 Prescaler_13
+~M 1 "../implement/Top.v" 1760 Prescaler_17
+~A 1 "../implement/Top.v" 1760 Prescaler_17
+~M 1 "../implement/Top.v" 2337 Prescaler_DISP
+~A 1 "../implement/Top.v" 2337 Prescaler_DISP
+~M 3 "../implement/Top.v" 2803 Top
+~A 1 "../implement/Top.v" 2803 Top
+~M 3 "../implement/Top.v" 3008 glbl
+~A 1 "../implement/Top.v" 3008 glbl
